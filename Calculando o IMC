@@ -1,0 +1,28 @@
+/*
+imc ≤ 18,5	        		⇒ abaixo do peso
+imc > 18,5 e imc ≤ 25,0	⇒ peso ideal
+imc > 25,0 e imc ≤ 30,0	⇒ sobrepeso
+imc > 30,0		        	⇒ obeso
+*/
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    float peso, altura, imc;
+    Scanner pezinho = new Scanner(System.in);
+    
+    System.out.println("Insira aqui o peso: ");
+    peso = pezinho.nextFloat();
+
+    System.out.println("Insira agora a altura: ");
+    altura = pezinho.nextFloat();
+
+    imc = peso / (altura * altura);
+    System.out.printf("\nO seu IMC é de %.2f\n", imc);
+      if (imc < 18.5) System.out.print("Você está abaixo do peso.");
+ else if (imc <= 25) System.out.print("Você está no peso ideal.");
+ else if (imc <= 30) System.out.print("Você está sobrepeso");
+ else if (imc >30) System.out.print("Você está obeso(a)");
+  }
+}
