@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+  int n1, n2;
+  Scanner numeros = new Scanner(System.in);
+
+  System.out.println("Digite o primeiro número: ");
+  n1 = numeros.nextInt();
+  System.out.println("Digite o segundo número: ");
+  n2 = numeros.nextInt();
+  
+  if (n1 == n2) System.out.print("Os números são iguais!");
+  else {
+      if (n1 > n2) System.out.print("O 1º número é o maior. Ordem crescente: "+n2+", "+n2);
+      else         System.out.print("O 2º número é o maior. Ordem crescente: "+n1+", "+n2);
+    }
+  }
+}
