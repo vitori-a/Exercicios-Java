@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    float n1, n2, n3, recup, media;
+    Scanner ler = new Scanner(System.in);
+    
+    System.out.print("Digite a primeira nota do(a) aluno(a): ");
+    n1 = ler.nextFloat();
+    System.out.print("Digite a segunda nota do(a) aluno(a): ");
+    n2 = ler.nextFloat();
+    System.out.print("Digite a terceira nota do(a) aluno(a): ");
+    n3 = ler.nextFloat();
+    
+    media = (n1 + n2 + n3) / 3;
+    System.out.printf("\nA média é de %.2f!\n", media);
+   
+    if (media >= 7) System.out.print("Aprovado(a)!");
+    else {
+      System.out.print("Será necessário fazer a recuperação. \n\nDigite a seguir a nota da prova: ");
+      recup = ler.nextFloat();
+      
+      if (recup >= 5) System.out.print("\nAprovado(a) na recuperação!");
+      else System.out.print("\nReprovado(a)!");
+    } 
+  }
+}
