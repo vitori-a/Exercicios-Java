@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    float n1, n2, result;
+    Scanner ler = new Scanner(System.in);
+
+    System.out.println("Informe o valor do seu salário: ");
+    n1 = ler.nextFloat();
+
+    System.out.println("Informe o seu orçamento: ");
+    n2 = ler.nextFloat();
+    result = n1 - n2;
+
+    if (result >= 0) System.out.println("\nGastos dentro do orçamento!");
+    else             System.out.println("\nOrçamento estourado!");
+  }
+}
