@@ -1,8 +1,8 @@
 /*
-imc ≤ 18,5	        		⇒ abaixo do peso
+imc ≤ 18,5	⇒ abaixo do peso
 imc > 18,5 e imc ≤ 25,0	⇒ peso ideal
 imc > 25,0 e imc ≤ 30,0	⇒ sobrepeso
-imc > 30,0		        	⇒ obeso
+imc > 30,0	⇒ obeso
 */
 
 import java.util.Scanner;
