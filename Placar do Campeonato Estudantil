@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    int unicid, univisit;
+    Scanner pontuacao = new Scanner(System.in);
+
+    System.out.println("Bem vindo ao campeonato de futebol!\n");
+    System.out.print("Digite o placar da UNICID: ");
+    unicid = pontuacao.nextInt();
+
+    System.out.print("Digite agora o placar da Universidade Visitante: ");
+    univisit = pontuacao.nextInt();
+
+    if(unicid == univisit) System.out.print("Empate!");
+    else {
+      if (unicid > univisit) System.out.print("UNICID vencedora!");
+      else System.out.print("UNICID derrotada!");
+    }
+  }
+}
